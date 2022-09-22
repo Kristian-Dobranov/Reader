@@ -1,0 +1,189 @@
+/* Fontawesome Import */
+@import url("https://use.fontawesome.com/releases/v5.10.2/css/all.css");
+/* Google Fonts Import Links */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+
+/* Typography */
+*,
+html,
+body {
+  font-family: "Roboto";
+}
+
+body {
+  height: 140vh;
+  position: relative;
+}
+
+.text--black {
+  color: #2e2e2e;
+}
+
+/* Navigation */
+.navigation {
+  width: 100%;
+  background-color: white;
+  z-index: 100;
+}
+
+/* Title */
+.navigation__title {
+  font-size: 1.4rem;
+  font-weight: 500;
+  font-family: "Roboto";
+}
+
+.fa-book {
+  color: #7342d6;
+}
+
+/* TopBar */
+.topBar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  flex-shrink: inherit;
+  justify-content: space-around;
+  padding: 0.7rem;
+  background-color: #f2f2f2;
+}
+
+.topBar .contacts a {
+  color: #7342d6;
+  margin-left: 10px;
+  font-size: 1.4rem;
+}
+
+.topBar .contacts a:hover {
+  color: #8d63e0;
+}
+
+/* bottomBar */
+.bottomBar {
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-evenly;
+  gap: 13rem;
+}
+
+.bottomBar .navigation__links {
+  display: flex;
+  gap: 1.3rem;
+}
+
+.bottomBar .navigation__links .navigation__link a {
+  font-size: 1.4rem;
+  text-decoration: none;
+  font-weight: bold;
+  color: #7342d6;
+  font-family: "Lato";
+}
+
+.bottomBar .navigation__links .navigation__link a:hover {
+  color: #7f5ac7;
+}
+
+/* bottomBar [Search Form] */
+.searchForm input {
+  padding: 6px;
+  outline: none;
+  border: 2px solid #7342d6;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+.searchForm button {
+  padding: 8px;
+  border: none;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  background-color: #7342d6;
+  color: white;
+}
+
+/* Landing Page */
+.svg__container {
+  position: relative;
+  height: 744px;
+  background-color: #e6e6e6;
+  border-bottom: 4px solid #cecece;
+}
+
+.landing__page--svg img {
+  width: 730px;
+  position: absolute;
+  top: 64%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.landing__page--svg-header {
+  font-family: "Roboto";
+  color: #7342d6;
+  font-size: 2.1rem;
+  font-weight: 500;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+/* Books */
+
+.books__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1.7rem;
+  padding: 1rem;
+  height: 60vh;
+}
+
+.books__title {
+  font-family: "Roboto";
+  color: #7342d6;
+  font-size: 2.1rem;
+  font-weight: 500;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 15px;
+}
+
+.book__cover img {
+  max-height: 390px;
+  width: 270px;
+  transition: all 0.3s ease;
+}
+
+.book__title {
+  color: rgb(41, 41, 41);
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin: 3px 0;
+}
+
+.book__title a {
+  text-decoration: none;
+  color: #2e2e2e;
+}
+
+.fa-star {
+  color: #fabf2a;
+}
+
+.book_price {
+  margin-top: 5px;
+  font-size: 1.3rem;
+}
+
+.book_price .discount {
+  color: #bfbfbf;
+  padding-right: 6px;
+  text-decoration: line-through;
+}
